@@ -18,9 +18,9 @@ class Solution:
 
         q.append(root)
 
-        while len(q) > 0:
+        # BFS: keep removing parent from queue and keep adding left and right child and at the end of inner loop increase the level by 1; two loops: one for queue length > 0 and inner loop is for traversing everything in that particular level on elements in the queue
 
-            # inner loop is dealing with all the children of one parent node
+        while len(q) > 0:
 
             for i in range(len(q)):
 
